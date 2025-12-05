@@ -1,4 +1,5 @@
 # to calculate your height multiplied by your weight， it is healthy or not. healthcare.
+from email.quoprimime import body_check
 
 name = input("Enter your name: ")
 age = input("Enter your age: ")
@@ -18,5 +19,20 @@ confirm = input("Is the personal information correct? (yes/no): ")
 if confirm == "yes": print("Thank you, Let's continue :) !")
 else: print("PLEASE CHECK")
 
+weight = float(input("Enter your weight in kg: "))
+height = float(input("Enter your height in centimeters: "))
+print("\nChoose operation:")
+print("1. Subtraction (-)")
+operation = input("Enter your choice (1): ")
+if (operation == "1"):
+    result = height - weight
+    print(result)
 
+body = result
 
+if body > 110:
+    print("You are underweight.")
+elif 110 >= body >=90:
+    print("You are in the healthy weight range.")
+elif body < 90:
+    print("You are overweight.")
