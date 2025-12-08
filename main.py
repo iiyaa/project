@@ -15,9 +15,13 @@ person = {
     "city": city
 }
 print(person)
-confirm = input("Is the personal information correct? (yes/no): ")
-if confirm == "yes": print("Thank you, Let's continue :) !")
-else: print("PLEASE CHECK")
+confirm=""
+while confirm != "yes":
+    confirm = input("Is the personal information correct? (yes/no): ")
+    if confirm == "yes":
+        print("Thank you, Let's continue :) !")
+    else:
+        print("PLEASE CHECK")
 
 weight = float(input("Enter your weight in kg: "))
 height = float(input("Enter your height in centimeters: "))
