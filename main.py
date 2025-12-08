@@ -1,6 +1,6 @@
 # to calculate your height multiplied by your weight， it is healthy or not. healthcare.
 from email.quoprimime import body_check
-
+import random
 name = input("Enter your name: ")
 age = input("Enter your age: ")
 gender = input("Enter your gender: ")
@@ -40,3 +40,14 @@ elif 110 >= body >=90:
     print("You are in the healthy weight range.")
 elif body < 90:
     print("You are overweight.")
+
+
+fun_messages = [
+    "let's do some fun things.",
+    "Today is sunday.",
+    "I'm so happy today!",
+]
+def random_fun_message():
+    msg = random.choice(fun_messages)
+    print("\nRandom fun message: ", msg, "\n")
+random_fun_message()
