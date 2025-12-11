@@ -6,7 +6,7 @@ age = input("Enter your age: ")
 gender = input("Enter your gender: ")
 email = input("Enter your email: ")
 city = input("Enter your city: ")
-print("Hello, " + name + "!")
+print(f"Hello, {name}!")
 person = {
     "name": name,
     "age": age,
@@ -43,11 +43,14 @@ elif body < 90:
 
 
 fun_messages = [
-    "let's do some fun things.",
-    "Today is sunday.",
-    "I'm so happy today!",
+    "let's do some fun things!",
+    "You did really good job today!",
+    "I'm so happy to see you in here!",
+    "We hope to see you next time!",
+    "Thank you for use this!"
 ]
 def random_fun_message():
     msg = random.choice(fun_messages)
     print("\nRandom fun message: ", msg, "\n")
 random_fun_message()
+3
